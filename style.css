@@ -25,15 +25,15 @@
   .header {
     position: fixed;
     top:0;
-    left: 0%;
+    left: 0;
   width: 100%;
-  padding: 4rem 12% 4rem;
+  padding: 4rem 12% ;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
+  z-index: 1;
 }
 .logo{
   font-size: 3rem;
@@ -66,16 +66,14 @@
   color: var(--main-color);
   display: none;
 }
-section{
-  min-height: 100vh;
-  padding: 10rem 12% 10rem;
-}
+
 .home{
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 15rem;
+  padding:  300px 10rem;
+  margin-top: 500px;
 }
+
 .home-content{
   display: flex;
   flex-direction: column;
@@ -96,7 +94,7 @@ span{
   font-size: 3.5rem;
 }
 .home-content h1{
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
@@ -105,9 +103,7 @@ span{
   border-radius: 50%;
 }
 .home-img img{
-  position: relative;
-  top: 3rem;
-  width: 32vw;
+  width: 75%;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -184,7 +180,7 @@ span{
   min-width: 280px;
 }
 .text-animation span{
-  position: relative;
+
 }
 .text-animation span::before{
   content: "Ui/Ux Designer";
@@ -194,7 +190,6 @@ span{
 .text-animation span::after{
   content: "";
   background-color: var(--main-color);
-  position: absolute;
   width: cals(100% + 8px);
   height: 100%;
   border-left: 3px solid var(--bg-color);
@@ -244,4 +239,16 @@ span{
   85%{
     width: calc(-100% + 8px);
   }
+}
+.heading{
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+.certificates{
+  padding: 100px 15px;
+  background: var(--second-bg-color);
+}
+.certificates h2{
+  margin-bottom: 5rem;
 }
